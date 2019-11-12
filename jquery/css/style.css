@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.slider{
+    width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.slider ul{
+    list-style: none;
+    display: flex;
+    position:relative;
+    transition: .3s cubic-bezier(0.75, -0.15, 0.51, 0.79);;
+}
+.slider ul li img{
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+}
+.slider #next, .slider #prew{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    color: aliceblue;
+} 
+.slider #next{
+    right: 15px;
+}
+.slider #prew{
+    left: 15px;
+}
